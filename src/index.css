@@ -10,8 +10,7 @@ body {
     background-color: #310062; 
     
     /* Apply the image URL */
-    background-image: linear-gradient(rgba(49, 0, 98, 0.7), rgba(49, 0, 98, 0.7)), /* Dark Purple Overlay */
-                      url('/hero.webp'); 
+    background-image: linear-gradient(rgba(49, 0, 98, 0.7), rgba(49, 0, 98, 0.7)), url('./assets/hero.webp');
                       
     background-size: cover;
     background-position: center;

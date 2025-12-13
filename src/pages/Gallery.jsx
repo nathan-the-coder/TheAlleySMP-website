@@ -1,49 +1,20 @@
 import Header from "../components/Header";
 import ImageGallery from "react-image-gallery";
-// import stylesheet if you're not already using CSS @import
 import "react-image-gallery/styles/css/image-gallery.css";
 
+const base = import.meta.env.BASE_URL || '/';
+
 const images = [
-  {
-    original: "/gallery/1763268658104.webp",
-    thumbnail: "/gallery/1763268658104.webp",
-  },
-  {
-    original: "/gallery/1763268686319.webp",
-    thumbnail: "/gallery/1763268686319.webp",
-  },
-  {
-    original: "/gallery/2025-11-15_00.44.49.webp",
-    thumbnail: "/gallery/2025-11-15_00.44.49.webp",
-  },
-  {
-    original: "/gallery/2025-11-19_21.45.03.webp",
-    thumbnail: "/gallery/2025-11-19_21.45.03.webp",
-  },
-  {
-    original: "/gallery/2025-12-01_00.44.32.webp",
-    thumbnail: "/gallery/2025-12-01_00.44.32.webp",
-  },
-  {
-    original: "/gallery/image-2.webp",
-    thumbnail: "/gallery/image-2.webp",
-  },
-  {
-    original: "/gallery/image-3.webp",
-    thumbnail: "/gallery/image-3.webp",
-  },
-  {
-    original: "/gallery/image-58.webp",
-    thumbnail: "/gallery/image-58.webp",
-  },
-  {
-    original: "/gallery/image.webp",
-    thumbnail: "/gallery/image.webp",
-  },
-  {
-    original: "/gallery/Messenger_creation_4D22338D-DE21-4C33-974E-8CA6B3260A4C.webp",
-    thumbnail: "/gallery/Messenger_creation_4D22338D-DE21-4C33-974E-8CA6B3260A4C.webp",
-  },
+  { original: `${base}gallery/1763268658104.webp`, thumbnail: `${base}gallery/1763268658104.webp` },
+  { original: `${base}gallery/1763268686319.webp`, thumbnail: `${base}gallery/1763268686319.webp` },
+  { original: `${base}gallery/2025-11-15_00.44.49.webp`, thumbnail: `${base}gallery/2025-11-15_00.44.49.webp` },
+  { original: `${base}gallery/2025-11-19_21.45.03.webp`, thumbnail: `${base}gallery/2025-11-19_21.45.03.webp` },
+  { original: `${base}gallery/2025-12-01_00.44.32.webp`, thumbnail: `${base}gallery/2025-12-01_00.44.32.webp` },
+  { original: `${base}gallery/image-2.webp`, thumbnail: `${base}gallery/image-2.webp` },
+  { original: `${base}gallery/image-3.webp`, thumbnail: `${base}gallery/image-3.webp` },
+  { original: `${base}gallery/image-58.webp`, thumbnail: `${base}gallery/image-58.webp` },
+  { original: `${base}gallery/image.webp`, thumbnail: `${base}gallery/image.webp` },
+  { original: `${base}gallery/Messenger_creation_4D22338D-DE21-4C33-974E-8CA6B3260A4C.webp`, thumbnail: `${base}gallery/Messenger_creation_4D22338D-DE21-4C33-974E-8CA6B3260A4C.webp` },
 ];
 
 export default function Gallery() {

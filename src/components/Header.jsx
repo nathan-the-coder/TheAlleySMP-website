@@ -1,5 +1,6 @@
 import { Link, NavLink } from "react-router";
-import logoText from "/model.png";
+const base = import.meta.env.BASE_URL || '/';
+
 
 export default function Header() {
     return (
@@ -15,14 +16,14 @@ export default function Header() {
             <div className="max-w-7xl mx-auto flex justify-between items-center">
                 
                 {/* Logo & Brand */}
-                <a href="#" className="flex items-center">
+                <a href={base} className="flex items-center">
                     {/* FIX: Constrain the image's height with a small 'h-10' (or h-12) 
                       and use 'w-auto' to maintain the aspect ratio.
                       This forces the nav bar height to a reasonable size.
                     */}
                     <img 
                         className="h-7 w-auto" 
-                        src={logoText} 
+                        src={`${base}model.png`} 
                         alt="The Alley SMP Logo" 
                     />
                 </a>

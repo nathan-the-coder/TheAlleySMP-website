@@ -1,5 +1,5 @@
- import logoText from "/hero-text.png";
- import { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+const base = import.meta.env.BASE_URL || '/';
 const JAVA_IP = "thealleysmp.com";
 const BEDROCK = "thealleysmp.com:19132";
 
@@ -42,7 +42,7 @@ useEffect(() => {
                 <div className="flex justify-center mb-6"> 
                     <img 
                         className="w-auto h-50 sm:h-32 md:h-40 max-h-48" 
-                        src={logoText} 
+                        src={`${base}hero-text.png`}
                         alt="The Alley SMP Logo" 
                     />
                 </div>
