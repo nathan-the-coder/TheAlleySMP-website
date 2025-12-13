@@ -1,0 +1,122 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Custom styles for react-image-gallery to match purple theme */
+.image-gallery {
+  background: rgba(49, 0, 98, 0.9); /* Dark purple background */
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.image-gallery-content {
+  background: transparent;
+}
+
+.image-gallery-slide img {
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  width: 800px;
+  height: 600px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .image-gallery-slide img {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+.image-gallery-content {
+  background: transparent;
+}
+
+.image-gallery-thumbnails {
+  background: rgba(88, 28, 135, 0.8); /* Lighter purple */
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.image-gallery-thumbnail {
+  border: 2px solid transparent;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+
+.image-gallery-thumbnail.active,
+.image-gallery-thumbnail:hover {
+  border-color: #ec4899; /* Pink accent */
+}
+
+.image-gallery-left-nav,
+.image-gallery-right-nav {
+  color: #ffffff;
+  background: rgba(236, 72, 153, 0.8); /* Pink background */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.image-gallery-left-nav:hover,
+.image-gallery-right-nav:hover {
+  background: rgba(236, 72, 153, 1);
+}
+
+.image-gallery-play-button {
+  color: #ffffff;
+  background: rgba(49, 0, 98, 0.8);
+  border-radius: 6px;
+  padding: 8px 12px;
+}
+
+.image-gallery-play-button:hover {
+  background: rgba(49, 0, 98, 1);
+}

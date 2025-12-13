@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+body {
+    font-family: "Roboto", sans-serif;
+    
+    /* NEW: Unified Background Image & Overlay */
+    /* Use your purple overlay color here (e.g., a dark violet) */
+    background-color: #310062; 
+    
+    /* Apply the image URL */
+    background-image: linear-gradient(rgba(49, 0, 98, 0.7), rgba(49, 0, 98, 0.7)), /* Dark Purple Overlay */
+                      url('/hero.webp'); 
+                      
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Optional: Makes the background scroll-less (parallax effect) */
+    
+    /* Ensure no margins push the content down */
+    margin: 0; 
+}
+
+
+.font-bold {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
